@@ -1,0 +1,116 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#about::before {
+    height: 950px;
+  }
+
+#about img {
+  margin: 0px -50px;
+  width: 400px;
+  height: 500px;
+}
+
+#about .B-primary {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 730px;
+  left: 470px;
+  margin: 0px 0px;
+}
+
+#sub-about {
+  position: absolute;
+  top: 1280px;
+  left: -50px;
+}
+
+#sub-about::before {
+  width: 100%;
+  top: auto;
+  left: auto;
+  height: 308px;
+}
+
+.B-secondary h1{
+  text-align: center;
+  margin: 15px 0px;
+}
+
+#services-container{
+  top: 1640px;
+}
+
+#contact{
+  top: 1460px;
+}
+
+footer{
+  top: 1580px;
+}
+
+/* Another Way to make responisve */
+/* #about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#about::before {
+    height: 1500px;
+  }
+
+#about img {
+  margin: -15px 115px;
+  width: 60%;
+  height: 660px;
+  align-items: center;
+}
+
+#about .B-primary {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 1410px;
+  left: 80px;
+  margin: 0px auto;
+  width: 84%;
+  text-align: center;
+}
+
+#sub-about {
+  position: absolute;
+  top: 1830px;
+  left: -50px;
+}
+
+#sub-about::before {
+  width: 100%;
+  top: auto;
+  left: auto;
+  height: 308px;
+}
+
+.B-secondary h1{
+  text-align: center;
+}
+
+#services-container{
+  top: 2190px;
+}
+
+#contact{
+  top: 2000px;
+}
+
+footer{
+  top: 2120px;
+} */

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Bonus Attendance Form </title>
+    <link rel="icon" type="image/x-icon" href="/img/logoforAMS.png">
+    <style>
+        /* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/bgform.png) no-repeat center center/cover;
+}
+
+.container{
+    position: relative;
+    max-width: 850px;
+    width: 80%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 350px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px auto;
+    background-color: #0583d2;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.container form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form button:hover{
+    background-color: #064f7d;
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}
+    </style>
+
+    <!-- <script>
+        const form = document.querySelector("form"),
+        nextBtn = form.querySelector(".nextBtn"),
+        backBtn = form.querySelector(".backBtn"),
+        allInput = form.querySelectorAll(".first input");
+
+
+nextBtn.addEventListener("click", ()=> {
+    allInput.forEach(input => {
+        if(input.value != ""){
+            form.classList.add('secActive');
+        }else{
+            form.classList.remove('secActive');
+        }
+    })
+})
+
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+</script> -->
+</head>
+<body>
+    <div class="container">
+        <header>Bonus Attendance Form</header>
+        <form action="noaction.php">
+            
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Registration Number</label>
+                            <input type="Id" placeholder="Enter your Reg. Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Work Under</label>
+                            <select required>
+                                <option disabled selected>Work Under</option>
+                                <option>Mr. Depak Moud</option>
+                                <option>Mr. Abhishek Dadhich</option>
+                                <option>Ms. Shivangi Khandelwal</option>
+                                <option>Mr. Vivek Saxena</option>
+                                <option>Mr. OP Sikhwal</option>
+                                <option>Mr.Prince Dawar</option>
+                                <option>Ms. Sikha Gautam</option>
+                                <option>Ms. Ritu Shukla</option>
+                                <option>Ms. Pooja Sharma</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>Date From</label>
+                            <input type="date" placeholder="Date From" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date To</label>
+                            <input type="date" placeholder="Date To" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Event Type</label>
+                            <select required>
+                                <option disabled selected>Select Description</option>
+                                <option>Workshop</option>
+                                <option>Project Development</option>
+                                <option>Shivangi Khandelwal</option>
+                                <option>Outside Participation</option>
+                                <option>Council Work</option>
+                                <option>Other Activity</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Other Description</label>
+                            <input type="text" placeholder="" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Attendance</label>
+                            <select required>
+                                <option disabled selected>Select Attendance</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                            </select>
+                        </div> 
+                        
+                        <button class="nextBtn">
+                            <span class="btnText">Submit</span>
+                        </button>
+                    
+                    </div>
+                
+            </form>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+</body>
+</html>

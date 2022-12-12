@@ -1,0 +1,525 @@
+/*Css reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Css variables*/
+
+/*navigation bar*/
+#navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  background: rgb(243, 242, 242);
+  color: black;
+}
+
+/*navigation bar:logo and image*/
+#logo {
+  margin: 8px 13px;
+}
+
+#logo img {
+  margin: 3px 3px;
+  height: 65px;
+}
+#navbar .title {
+  font-size: 38px;
+  margin: 0px -10px;
+}
+
+/*navigation bar:list styling*/
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+#navbar ul li a {
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 2px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(172, 170, 170);
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: rgb(221, 220, 220);
+  color: black;
+  margin: 5px 15px;
+  border-radius: 10px;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: rgb(221, 220, 220);
+  color: black;
+  border-radius: 10px;
+}
+/* Instagram */
+.fa-instagram {
+  background: rgb(221, 220, 220);
+  color: black;
+  margin: 5px 15px;
+  border-radius: 10px;
+}
+
+/* home */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 125px 100px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("../img/background1.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 12%;
+  left: 0%;
+  height: 83%;
+  width: 100%;
+  z-index: -2;
+  filter: brightness(30%);
+}
+
+#home h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2.7rem;
+  margin: 8px;
+}
+
+#home h6 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 45px;
+}
+
+#home p {
+  color: rgb(235, 229, 229);
+  text-align: center;
+  font-size: 1.23rem;
+}
+
+#home #id {
+  padding: 7px 15px;
+  margin: 17px 5px;
+  border: 2px solid grey;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  border-radius: 7px;
+  text-align: center;
+}
+#home ::placeholder {
+  color: black;
+}
+
+.btn {
+  padding: 6px 20px;
+  margin: 0px 72px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.btn:hover {
+  color: grey;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+#home .anchor {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  flex-direction: row;
+}
+
+#home .anchor:hover {
+  color: grey;
+}
+
+/* About Section */
+
+#about {
+  display: flex;
+}
+
+#about::before {
+  content: "";
+  background: rgb(228, 228, 228);
+  position: absolute;
+  width: 100%;
+  height: 160%;
+  top: 95%;
+  left: 0%;
+  z-index: -3;
+}
+
+#about img {
+  height: 600px;
+  width: 480px;
+  border-radius: 10px;
+  margin: 50px 50px;
+  position: absolute;
+  top: 104%;
+  left: 85px;
+}
+
+.B-primary {
+  position: absolute;
+  top: 120%;
+  left: 690px;
+  margin: 0px 20px;
+}
+
+.B-primary h1 {
+  font-size: 65px;
+}
+
+.B-primary h3 {
+  color: rgb(91, 86, 86);
+  font-size: 20px;
+  margin: 0px 4px;
+}
+
+.B-primary p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: rgb(73, 68, 68);
+  padding: 2px;
+  margin: 2px;
+}
+
+.B-primary .btn1 {
+  padding: 14px 30px;
+  margin: 4px 2px;
+  border: 2px solid grey;
+  background-color: #d6976a;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.B-primary .btn1:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+#sub-about {
+  position: absolute;
+  top: 210%;
+  margin: 5px 95px;
+  padding: 0px 20px;
+  z-index: -3;
+}
+
+#sub-about::before {
+  content: "";
+  background: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: -20%;
+  left: 0%;
+  z-index: -2;
+  border-radius: 10px;
+}
+
+.B-secondary h1 {
+  font-size: 50px;
+  padding: 0px 28px;
+  margin: 10px 0px;
+  z-index: -3;
+}
+
+.B-secondary p {
+  font-size: 20px;
+  padding: 0px 30px;
+}
+
+/* Services */
+
+#services-container {
+  position: absolute;
+  top: 1900px;
+  height: 99%;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+#services-container .hprimary {
+  display: block;
+  margin: 20px auto;
+  width: 500px;
+  font-size: 70px;
+  padding: 4px 5px;
+  text-align: center;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#services .box {
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  margin: 0px 30px;
+  width: 370px;
+  height: 470px;
+}
+
+.box h2 {
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 37px;
+}
+
+#services .box img {
+  height: 260px;
+  width: 370px;
+  border-radius: 2px;
+  margin: auto;
+  display: inline;
+}
+
+.box .btn2 {
+  padding: 10px 35px;
+  margin: 4px 120px;
+  border: 2px solid grey;
+  background-color: white;
+  color: rgb(89, 89, 89);
+  font-size: 1rem;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.box .btn2:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* Contact Us */
+
+#contact {
+  position: relative;
+  top: 1690px;
+  color: aliceblue;
+  z-index: -2;
+}
+
+#contact::before {
+  content: "";
+  background: url(../img/contact.png) no-repeat center center/cover;
+  position: absolute;
+  top: -40px;
+  left: 0%;
+  width: 100%;
+  height: 710px;
+  z-index: -1;
+}
+
+#contact h1 {
+  margin: 120px auto;
+  width: 380px;
+  font-size: 70px;
+  color: white;
+  padding: 0px 5px;
+}
+
+#contact-box {
+  font-family: cursive;
+  display: flex;
+  width: 420px;
+  padding: 9px;
+  margin: -120px auto;
+  color: aliceblue;
+}
+
+#contact-box ::placeholder {
+  color: white;
+}
+
+#contact-box .form-group {
+  padding: 8px 0px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 400px;
+  padding: 3%;
+  margin: 3px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+
+#contact-box label {
+  font-size: 20px;
+}
+
+#contact-box .btn {
+  display: flex;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  background: none;
+  text-align: center;
+  width: 112px;
+}
+
+#contact-box .btn:hover {
+  color: grey;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer{
+  border-top: 1px solid black;
+  position: relative;
+  top: 1829px;
+  background-color: rgb(228, 228, 228);
+}
+
+.foot{
+  padding: 0px 0;
+}
+
+.footer-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.footlinks h4{
+  margin-top: 30px;
+  font-size: 29px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+
+.footlinks h4::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 70px;
+  left: 0;
+  bottom: -7px;
+  background: black;
+}
+
+.footlinks ul li{
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footlinks ul li a{
+  font-size: 20px;
+  /* font-weight: bolder; */
+  color: black;
+  display: block;
+  transition: ease 0.30s;
+  text-decoration: none;
+}
+
+.footlinks ul li a:hover{
+  transform: translate(6px);
+  color: black;
+}
+
+.social a{
+  font-size: 25px;
+  margin: 4px;
+  height: 5px;
+  width: 25px;
+  color: rgb(255, 253, 253);
+  background-color: rgb(0, 0, 0);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  transition: ease 0.30s;
+}
+
+.social a:hover{
+  transform: scale(1.2);
+}
+
+.end{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.end p{
+  font-size: 17px;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
